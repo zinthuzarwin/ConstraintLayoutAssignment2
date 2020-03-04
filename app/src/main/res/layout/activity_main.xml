@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:text="&#8801;"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="22dp" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@color/white"
+            android:text="&#x22EE;"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="22dp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/Our_team"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:text="Our Team"
+        android:textSize="30sp"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/view1"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:elevation="12dp"
+        app:cardCornerRadius="35dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.10"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintVertical_bias="0.15">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/steve_jobs" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/view2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:elevation="12dp"
+        app:cardCornerRadius="35dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.15">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/jack_ma" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/view3"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:elevation="12dp"
+        app:cardCornerRadius="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.87"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.15">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bill_gates" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/title1"
+        android:layout_width="67dp"
+        android:layout_height="19dp"
+        android:text="Steve Jobs"
+        android:textColor="@color/colorPrimary"
+        android:textSize="12sp"
+        app:layout_constraintCircle="@id/view1"
+        app:layout_constraintCircleAngle="180"
+        app:layout_constraintCircleRadius="50dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view1" />
+
+    <TextView
+        android:id="@+id/title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jack Ma"
+        android:textColor="@color/colorPrimary"
+        android:textSize="12sp"
+        app:layout_constraintCircle="@id/view2"
+        app:layout_constraintCircleAngle="180"
+        app:layout_constraintCircleRadius="50dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view2" />
+
+    <TextView
+        android:id="@+id/title3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bill Gates"
+        android:textColor="@color/colorPrimary"
+        android:textSize="12sp"
+        app:layout_constraintCircle="@id/view3"
+        app:layout_constraintCircleAngle="180"
+        app:layout_constraintCircleRadius="50dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view3" />
+
+    <TextView
+        android:id="@+id/position1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CEO Founder of Apple"
+        android:textSize="10sp"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintCircle="@id/view1"
+        app:layout_constraintCircleAngle="180"
+        app:layout_constraintCircleRadius="65dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title1" />
+
+    <TextView
+        android:id="@+id/position2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Co_Founder of Alibaba"
+        android:textColor="@color/colorPrimary"
+        android:textSize="10sp"
+        app:layout_constraintCircle="@id/view2"
+        app:layout_constraintCircleAngle="180"
+        app:layout_constraintCircleRadius="65dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title2" />
+
+    <TextView
+        android:id="@+id/position3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Founder of Microsoft "
+        android:textColor="@color/colorPrimary"
+        android:textSize="10sp"
+        app:layout_constraintCircle="@id/view3"
+        app:layout_constraintCircleAngle="180"
+        app:layout_constraintCircleRadius="65dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title3" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/view4"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:elevation="12dp"
+        app:cardCornerRadius="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.10"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.35">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/mark_zuckerberg" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/view5"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:elevation="12dp"
+        app:cardCornerRadius="35dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.35">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/jaff_bezos" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/view6"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:cardCornerRadius="35dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.87"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintVertical_bias="0.35">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/walt_disney" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/title4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mark Zuckerberg"
+        android:textColor="@color/colorPrimary"
+        android:textSize="12sp"
+        app:layout_constraintCircle="@id/view4"
+        app:layout_constraintCircleAngle="180"
+        app:layout_constraintCircleRadius="50dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view4" />
+
+    <TextView
+        android:id="@+id/title5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jeff Bezos"
+        android:textColor="@color/colorPrimary"
+        android:textSize="12sp"
+        app:layout_constraintCircle="@id/view5"
+        app:layout_constraintCircleAngle="180"
+        app:layout_constraintCircleRadius="50dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view5" />
+
+    <TextView
+        android:id="@+id/title6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Walt Disney"
+        android:textColor="@color/colorPrimary"
+        android:textSize="12sp"
+        app:layout_constraintCircle="@id/view6"
+        app:layout_constraintCircleAngle="180"
+        app:layout_constraintCircleRadius="50dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view6" />
+    <TextView
+        android:id="@+id/position4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Founder of Facebook"
+        android:textColor="@color/colorPrimary"
+        android:textSize="10sp"
+        app:layout_constraintCircle="@id/view4"
+        app:layout_constraintCircleAngle="180"
+        app:layout_constraintCircleRadius="65dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title4" />
+
+    <TextView
+        android:id="@+id/position5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fonder of Amazon"
+        android:textColor="@color/colorPrimary"
+        android:textSize="10sp"
+        app:layout_constraintCircle="@id/view5"
+        app:layout_constraintCircleAngle="180"
+        app:layout_constraintCircleRadius="65dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title5" />
+
+    <TextView
+        android:id="@+id/position6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Animator of Disney"
+        android:textColor="@color/colorPrimary"
+        android:textSize="10sp"
+        app:layout_constraintCircle="@id/view6"
+        app:layout_constraintCircleAngle="180"
+        app:layout_constraintCircleRadius="65dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title6" />
+
+    <TextView
+        android:id="@+id/mission"
+        android:layout_marginTop="20dp"
+        android:textSize="23sp"
+        app:layout_constraintTop_toBottomOf="@id/position6"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Mission"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/paraone"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="18"
+        android:text="@string/para_one"
+        android:textColor="@color/colorAccent"
+        android:textSize="14sp"
+        app:layout_constraintHorizontal_bias="0.70"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mission" />
+
+    <TextView
+        android:id="@+id/paratwo"
+        android:textSize="14sp"
+        android:text="@string/para_two"
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/paraone"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="350dp"
+        app:layout_constraintHorizontal_bias="0.70"
+        android:ems="18"
+        android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
